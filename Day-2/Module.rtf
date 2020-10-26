@@ -1,0 +1,184 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2513
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Arial-BoldMT;\f1\fswiss\fcharset0 ArialMT;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red56\green56\blue56;\red252\green40\blue75;
+\red10\green82\blue135;\red190\green31\blue4;\red67\green67\blue67;\red0\green0\blue0;}
+{\*\expandedcolortbl;;\csgray\c0\c0;\cssrgb\c28235\c28235\c28235;\cssrgb\c100000\c26275\c36471;
+\cssrgb\c0\c40000\c60000;\cssrgb\c80000\c20000\c0;\cssrgb\c33333\c33333\c33333;\cssrgb\c0\c0\c0;}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid1\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid1}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}}
+\paperw11900\paperh16840\margl1440\margr1440\vieww28600\viewh18000\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\b\fs72 \cf0 \cb2 Module
+\f1\b0 \
+\pard\pardeftab720\partightenfactor0
+
+\fs32 \cf3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec3 M\uc0\u7897 t module c\'f3 th\u7875  hi\u7875 u l\'e0 m\u7897 t file, trong \u273 \'f3 s\u7869  ch\u7913 a nh\u7919 ng \u273 o\u7841 n code \u273 \u7843 m nhi\u7879 m m\u7897 t ch\u7913 c n\u259 ng n\'e0o \u273 \'f3. V\u7899 i ES2015, m\u7897 t module c\'f3 th\u7875  load c\'e1c module kh\'e1c b\u7857 ng c\'e1ch s\u7917  d\u7909 ng\'a0export\'a0v\'e0\'a0import\'a0m\u7897 t c\'e1ch ph\'f9 h\u7907 p.\
+\
+\pard\pardeftab720\sa278\qj\partightenfactor0
+
+\f0\b\fs48 \cf3 C\'e1c \uc0\u273 \u7863 c tr\u432 ng c\u7911 a module
+\fs32 \
+\pard\pardeftab720\sa400\qj\partightenfactor0
+
+\f1\b0 \cf3 B\uc0\u7857 ng vi\u7879 c h\u7895  tr\u7907  module b\u7903 i ch\'ednh JavaScript, th\'ec m\u7897 t module s\u7869  c\'f3 nh\u7919 ng \u273 \u7863 c tr\u432 ng r\u7845 t th\'fa v\u7883 .\
+\pard\pardeftab720\sa288\qj\partightenfactor0
+
+\f0\b\fs36 \cf3 Lu\'f4n lu\'f4n \uc0\u7903  strict mode
+\fs32 \
+\pard\pardeftab720\sa400\qj\partightenfactor0
+
+\f1\b0 \cf3 M\uc0\u7897 t module lu\'f4n lu\'f4n s\u7917  d\u7909 ng\'a0use strict, ngh\u297 a l\'e0 code JavaScript lu\'f4n lu\'f4n \u7903  trong\'a0{\field{\*\fldinst{HYPERLINK "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode"}}{\fldrslt \cf4 \strokec4 strict mode}}. Nh\uc0\u7901  vi\u7879 c n\'e0y, n\u7871 u ch\'fang ta g\'e1n m\u7897 t bi\u7871 n kh\'f4ng c\'f3 khai b\'e1o tr\u432 \u7899 c s\u7869  b\u7883  l\u7895 i ngay\
+\pard\pardeftab720\sa288\qj\partightenfactor0
+
+\f0\b\fs36 \cf3 Scope
+\fs32 \
+\pard\pardeftab720\sa400\qj\partightenfactor0
+
+\f1\b0 \cf3 M\uc0\u7895 i module c\'f3 m\u7897 t scope ri\'eang, \u273 i\u7873 u \u273 \'f3 khi\u7871 n cho c\'e1c bi\u7871 n, h\'e0m, v.v... c\u7911 a m\u7895 i module s\u7869  ch\u7881  thu\u7897 c v\u7873  module \u273 \'f3 m\'e0 th\'f4i, c\'e1c module kh\'e1c s\u7869  kh\'f4ng th\u7875  g\u7885 i hay s\u7917  \u273 \u7909 ng \u273 \u432 \u7907 c.\
+\pard\pardeftab720\partightenfactor0
+\cf3 Module c\uc0\u7847 n ph\u7843 i s\u7917  d\u7909 ng\'a0export\'a0\u273 \u7875  \u273 \u7883 nh ngh\u297 a nh\u7919 ng g\'ec m\'e0 c\'e1c script b\'ean ngo\'e0i c\'f3 th\u7875  s\u7917  d\u7909 ng \u273 \u432 \u7907 c (v\'e0 n\u7871 u mu\u7889 n s\u7917  d\u7909 ng ph\u7843 i\'a0import).\
+\
+\pard\pardeftab720\sa288\qj\partightenfactor0
+
+\f0\b\fs36 \cf3 Code trong module ch\uc0\u7881  \u273 \u432 \u7907 c th\u7921 c thi 1 l\u7847 n khi import
+\fs32 \
+\pard\pardeftab720\sa400\qj\partightenfactor0
+
+\f1\b0 \cf3 \uc0\u272 \'e2y l\'e0 m\u7897 t t\'ednh ch\u7845 t h\u7847 u nh\u432  xu\u7845 t hi\u7879 n tr\'ean t\u7845 t c\u7843  c\'e1c ng\'f4n ng\u7919 . N\u7871 u nh\u432  m\u7897 t module \u273 \u432 \u7907 c import nhi\u7873 u l\u7847 n, th\'ec code c\u7911 a n\'f3 c\u361 ng ch\u7881  \u273 \u432 \u7907 c th\u7921 c thi m\u7897 t l\u7847 n duy nh\u7845 t (\u7903  l\u7847 n import \u273 \u7847 u ti\'ean) m\'e0 th\'f4i. \u272 \'e2y l\'e0 m\u7897 t trong s\u7889  nh\u7919 ng t\'ednh ch\u7845 t r\u7845 t quan tr\u7885 ng.\
+\pard\pardeftab720\sa288\qj\partightenfactor0
+\cf3 import.meta
+\f0\b \
+\pard\pardeftab720\sa400\qj\partightenfactor0
+
+\f1\b0 \cf3 M\uc0\u7897 t \u273 \u7889 i t\u432 \u7907 ng\'a0import.meta\'a0s\u7869  ch\u7913 a th\'f4ng tin v\u7873  module hi\u7879 n t\u7841 i. Khi \u273 \u432 \u7907 c th\u7921 c thi b\u7903 i JavaScript engine c\u7911 a tr\'ecnh duy\u7879 t, n\'f3 ch\u7913 a th\'f4ng tin URL c\u7911 a script (ho\u7863 c URL c\u7911 a trang hi\u7879 n t\u7841 i n\'ean l\'e0 inline module).\
+\pard\pardeftab720\sa288\qj\partightenfactor0
+
+\f0\b\fs36 \cf3 Module lu\'f4n lu\'f4n\'a0
+\f1\b0 defer
+\f0\b\fs32 \
+\pard\pardeftab720\sa400\qj\partightenfactor0
+
+\f1\b0 \cf3 Module lu\'f4n lu\'f4n \uc0\u273 \u432 \u7907 c defer (t\u432 \u417 ng t\u7921  nh\u432  load m\u7897 t script c\'f3 thu\u7897 c t\'ednh\'a0defer\'a0v\u7853 y). Thu\u7897 c t\'ednh n\'e0y cho ph\'e9p module \u273 \u432 \u7907 c load "ng\u7847 m" trong khi HTML c\u7911 a trang v\u7851 n \u273 \u432 \u7907 c load ti\u7871 p v\'e0 code c\u7911 a module \u273 \u432 \u7907 c th\u7921 c thi khi n\'e0o script load xong. \u272 i\u7873 u n\'e0y d\u7851 n \u273 \u7871 n m\u7897 t s\u7889  k\u7871 t qu\u7843  nh\u432  sau:\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls1\ilvl0\cf3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec3 Vi\uc0\u7879 c load c\'e1c script c\'f3\'a0type="module"\'a0kh\'f4ng \u7843 nh h\u432 \u7903 ng \u273 \u7871 n HTML, ch\'fang di\u7877 n ra song song v\u7899 i nhau\
+\ls1\ilvl0\kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec3 Script c\uc0\u7911 a module s\u7869  ch\u7901  \u273 \u7871 n khi HTML \u273 \u432 \u7907 c load h\u7871 t m\u7899 i th\u7921 c thi\
+\ls1\ilvl0\kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec3 Th\uc0\u7913  t\u7921  c\u7911 a c\'e1c script v\u7851 n \u273 \u432 \u7907 c b\u7843 o to\'e0n (script load tr\u432 \u7899 c v\u7851 n \u273 \u432 \u7907 c th\u7921 c thi tr\u432 \u7899 c)\
+\ls1\ilvl0\kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec3 \
+\pard\pardeftab720\sa288\qj\partightenfactor0
+
+\f0\b\fs36 \cf3 Inline module v\uc0\u7899 i\'a0
+\f1\b0 async
+\f0\b\fs32 \
+\pard\pardeftab720\sa400\qj\partightenfactor0
+
+\f1\b0 \cf3 Thu\uc0\u7897 c t\'ednh\'a0async\'a0th\'f4ng th\u432 \u7901 ng ch\u7881  c\'f3 t\'e1c d\u7909 ng v\u7899 i c\'e1c script load t\u7915  b\'ean ngo\'e0i. Nh\u432 ng v\u7899 i module, n\'f3 c\'f3 t\'e1c d\u7909 ng v\u7899 i t\u7845 t c\u7843 , k\u7875  c\u7843  c\'e1c script inline.\
+N\'f3i qua m\uc0\u7897 t ch\'fat v\u7873  thu\u7897 c t\'ednh\'a0async, n\'f3 kh\'e1c v\u7899 i\'a0defer\'a0\u7903  ch\u7895 , script s\u7869  \u273 \u432 \u7907 c load "ng\u7847 m" v\'e0 \u273 \u432 \u7907 c th\u7921 c thi ngay khi load xong, b\u7845 t k\u7875  HTML hay c\'e1c script kh\'e1c \u273 \'e3 \u273 \u432 \u7907 c load hay ch\u432 a.\
+\pard\pardeftab720\sa288\qj\partightenfactor0
+
+\f0\b\fs36 \cf3 Load script t\uc0\u7915  b\'ean ngo\'e0i
+\fs32 \
+\pard\pardeftab720\sa400\qj\partightenfactor0
+
+\f1\b0 \cf3 C\'e1c script \uc0\u273 \u432 \u7907 c load t\u7915  b\'ean ngo\'e0i v\'e0 c\'f3\'a0type="module"\'a0th\'ec c\'f3 m\u7897 t s\u7889  \u273 i\u7875 m kh\'e1c bi\u7879 t v\u7899 i c\'e1c script th\'f4ng th\u432 \u7901 ng.\
+Th\uc0\u7913  nh\u7845 t, l\'e0 n\u7871 u nhi\u7873 u script c\'f3 ch\'fang\'a0src\'a0th\'ec ch\'fang ch\u7881  \u273 \u432 \u7907 c th\u7921 c thi 1 l\u7847 n m\'e0 th\'f4i.\
+Th\uc0\u7913  hai, c\'e1c script m\'e0 kh\'e1c ngu\u7891 n g\u7889 c (v\'ed d\u7909  kh\'e1c domain) th\'ec y\'eau c\u7847 u ph\u7843 i c\'f3 c\'e1c header\'a0{\field{\*\fldinst{HYPERLINK "https://manhhomienbienthuy.bitbucket.io/2019/Jan/20/cors.html"}}{\fldrslt \cf4 \strokec4 CORS}}. N\'f3i \uc0\u273 \u417 n gi\u7843 n, th\'ec server ch\u7913 a c\'e1c script b\'ean ngo\'e0i n\'e0y ph\u7843 i h\u7895  tr\u7907  CORS th\'ec m\u7899 i c\'f3 th\u7875  load \u273 \u432 \u7907 c.\
+\pard\pardeftab720\sa257\qj\partightenfactor0
+
+\fs48 \cf3 import
+\f0\b \'a0v\'e0\'a0
+\f1\b0 export
+\f0\b \'a0trong module
+\fs32 \
+\pard\pardeftab720\sa278\qj\partightenfactor0
+
+\f1\b0\fs36 \cf3 export
+\f0\b \'a0k\'e8m v\uc0\u7899 i khai b\'e1o
+\fs32 \
+\pard\pardeftab720\sa400\qj\partightenfactor0
+
+\f1\b0 \cf3 M\uc0\u7885 i khai b\'e1o h\'e0m, bi\u7871 n, v.v... \u273 \u7873 u c\'f3 th\u7875  d\u7877  d\'e0ng th\'eam t\u7915  kho\'e1\'a0export\'a0v\u7873  ph\'eda tr\u432 \u7899 c v\u7899 i \'fd ngh\u297 a r\u7857 ng, nh\u7919 ng th\u7913  \u273 \'f3 v\u7915 a \u273 \u432 \u7907 c khai b\'e1o, \u273 \u7891 ng th\u7901 i c\u361 ng \u273 \u432 \u7907 c export \u273 \u7875  d\'f9ng \u7903  module kh\'e1c.\
+\pard\pardeftab720\partightenfactor0
+\cf3 Vi\uc0\u7879 c \u273 \u7863 t\'a0export\'a0v\'e0o ph\'eda tr\u432 \u7899 c khai b\'e1o m\u7897 t class hay m\u7897 t h\'e0m kh\'f4ng l\'e0m thay \u273 \u7893 i t\'ednh ch\u7845 t c\u7911 a khai b\'e1o \u273 \'f3 (ngh\u297 a l\'e0 n\'f3 kh\'f4ng tr\u7903  th\'e0nh m\u7897 t function expression). Do \u273 \'f3, ch\'fang ta kh\'f4ng c\'f3 d\u7845 u ch\u7845 m ph\u7849 y khi k\u7871 t th\'fac nh\u7919 ng khai b\'e1o n\'e0y.\
+\
+\pard\pardeftab720\sa278\qj\partightenfactor0
+
+\fs36 \cf3 export
+\f0\b \'a0t\'e1ch r\uc0\u7901 i kh\u7887 i khai b\'e1o
+\fs32 \
+\pard\pardeftab720\sa400\qj\partightenfactor0
+
+\f1\b0 \cf3 Ch\'fang ta ho\'e0n to\'e0n c\'f3 th\uc0\u7875  s\u7917  d\u7909 ng\'a0export\'a0t\'e1ch r\u7901 i ho\'e0n to\'e0n kh\u7887 i khai b\'e1o h\'e0m, bi\u7871 n, v.v... Vi\u7879 c n\'e0y s\u7869  cho ch\'fang ta m\u7897 t \u273 o\u7841 n code d\'e0i h\u417 n nh\u432 ng c\'f3 v\u7867  nh\u432  r\'f5 r\'e0ng, d\u7877  hi\u7875 u h\u417 n.\
+\pard\pardeftab720\sl560\partightenfactor0
+\cf5 \strokec5 function\cf3 \strokec3  foo() \{\
+    console.log(\cf6 \strokec6 'Hello, world'\cf3 \strokec3 );\
+\}\
+\
+\cf5 \strokec5 export\cf3 \strokec3  \{foo\};\
+\pard\pardeftab720\sa400\qj\partightenfactor0
+\cf3 \
+\pard\pardeftab720\sa278\qj\partightenfactor0
+
+\f0\b\fs36 \cf3 import *
+\fs32 \
+\pard\pardeftab720\sa400\qj\partightenfactor0
+
+\f1\b0 \cf3 Th\'f4ng th\uc0\u432 \u7901 ng, ch\'fang ta s\u7869  vi\u7871 t t\u7845 t c\u7843  c\'e1c th\'e0nh ph\u7847 n c\u7847 n import trong ngo\u7863 c nh\u7885 n\'a0import \{...\}\'a0nh\u432  d\u432 \u7899 i \u273 \'e2y:\
+\pard\pardeftab720\sl560\partightenfactor0
+\cf5 \strokec5 import\cf3 \strokec3  \{foo, bar\} from \cf6 \strokec6 './script.js'\cf3 \strokec3 ;\
+\pard\pardeftab720\sa400\qj\partightenfactor0
+\cf3 Khi m\'e0 danh s\'e1ch nh\uc0\u7919 ng th\u7913  c\u7847 n import tr\u7903  n\'ean d\'e0i h\u417 n, ch\'fang ta c\'f3 m\u7897 t c\'fa ph\'e1p cho ph\'e9p import "m\u7885 i th\u7913 " nh\u432  sau:\
+\pard\pardeftab720\sl560\partightenfactor0
+\cf5 \strokec5 import\cf3 \strokec3  \cf7 \strokec7 *\cf3 \strokec3  as foo from \cf6 \strokec6 './script.js'\cf3 \strokec3 ;\
+\
+foo.bar\
+foo.baz\
+\pard\tx566\pardeftab720\partightenfactor0
+\cf3 \
+\pard\pardeftab720\sa278\qj\partightenfactor0
+
+\f0\b\fs36 \cf8 import ... as ...
+\fs32 \cf3 \
+\pard\pardeftab720\sa400\qj\partightenfactor0
+
+\f1\b0 \cf3 Ch\'fang ta c\'f3 th\uc0\u7875  s\u7917  d\u7909 ng\'a0as\'a0trong l\'fac\'a0import\'a0\u273 \u7875  s\u7917  d\u7909 ng c\'e1c th\'e0nh ph\u7847 n \u273 \u432 \u7907 c import v\u7899 i m\u7897 t t\'ean kh\'e1c cho ti\u7879 n (ho\u7863 c tr\'e1nh xung \u273 \u7897 t gi\u7919 a c\'e1c module khi d\'f9ng chung t\'ean). v\'ed d\u7909 :\
+\pard\pardeftab720\sl560\partightenfactor0
+\cf5 \strokec5 import\cf3 \strokec3  \{foo as bar\} from \cf6 \strokec6 './script.js'\cf3 \strokec3 ;\
+\
+\pard\pardeftab720\sa278\qj\partightenfactor0
+
+\f0\b \cf3 export ... as ...\
+\pard\pardeftab720\sa400\qj\partightenfactor0
+
+\f1\b0 \cf3 C\'fa ph\'e1p n\'e0y t\uc0\u432 \u417 ng t\u7921  nh\u432  c\'fa ph\'e1p import ph\'eda tr\'ean\
+\pard\pardeftab720\sa278\qj\partightenfactor0
+
+\f0\b\fs36 \cf3 export default
+\fs32 \
+\pard\pardeftab720\sa400\qj\partightenfactor0
+
+\f1\b0 \cf3 C\'f3 2 lo\uc0\u7841 i module trong th\u7921 c t\u7871 : module ch\u7913 a c\'e1c th\u432  vi\u7879 n, c\'e1c h\'e0m ti\u7879 n \'edch v\'e0 module \u273 \u7883 nh ngh\u297 a duy nh\u7845 t 1 th\u7921 c th\u7875  (v\'ed d\u7909  m\u7897 t class\'a0User\'a0ch\u7859 ng h\u7841 n). V\'e0 c\'e1c developer c\u361 ng th\u432 \u7901 ng ti\u7871 p c\u7853 n theo h\u432 \u7899 ng m\u7895 i module ch\u7881  c\'f3 1 th\u7921 c th\u7875  duy nh\u7845 t. M\u7895 i th\u7913  ri\'eang trong m\u7897 t module c\'f3 v\u7867  l\'e0 m\u7897 t c\'e1ch t\u7893  ch\u7913 c code t\u7889 t.\
+Tuy nhi\'ean, m\uc0\u7897 t h\u7879  qu\u7843  t\u7845 t y\u7871 u l\'e0 ch\'fang ta s\u7869  c\u7847 n r\u7845 t nhi\u7873 u module. M\u7885 i vi\u7879 c s\u7869  ch\u7859 ng c\'f3 v\u7845 n \u273 \u7873  g\'ec, n\u7871 u c\'e1c file \u273 \u432 \u7907 c t\u7893  ch\u7913 c t\u7889 t v\'e0 \u273 \u7863 t t\'ean \u273 \'e0ng ho\'e0ng.\
+V\'e0 th\uc0\u7853 m ch\'ed, JavaScript c\'f2n cho ch\'fang ta m\u7897 t c\'fa ph\'e1p r\u7845 t hay, \u273 \'f3 ch\'ednh l\'e0\'a0export default\'a0\u273 \u7875  gi\'fap c\'e1c module ch\u7881  ch\u7913 a 1 th\u7913  n\'e0y \u273 \u432 \u7907 c s\u7917  d\u7909 ng d\u7877  d\'e0ng h\u417 n.\
+\pard\pardeftab720\sa278\qj\partightenfactor0
+
+\f0\b\fs36 \cf3 export ... from ...
+\fs32 \
+\pard\pardeftab720\sa400\qj\partightenfactor0
+
+\f1\b0 \cf3 \uc0\u272 \'e2y l\'e0 c\'fa ph\'e1p cho ph\'e9p ch\'fang ta import m\u7897 t th\u7913  v\'e0 ngay l\u7853 p t\u7913 c export n\'f3 (c\'f3 th\u7875  s\u7917  d\u7909 ng t\'ean kh\'e1c), v\'ed d\u7909 :\
+\pard\pardeftab720\sl560\partightenfactor0
+\cf5 \strokec5 export\cf3 \strokec3  \{foo\} from \cf6 \strokec6 './foo.js'\cf3 \strokec3 ;\
+\
+\cf5 \strokec5 export\cf3 \strokec3  \{\cf5 \strokec5 default\cf3 \strokec3  as bar\} from \cf6 \strokec6 './bar.js'\cf3 \strokec3 ;\
+\pard\pardeftab720\sl700\partightenfactor0
+\cf3 \
+\pard\tx566\pardeftab720\partightenfactor0
+\cf3 \
+\
+}
